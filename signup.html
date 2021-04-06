@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./signup.css">
+    <script src="https://kit.fontawesome.com/ce0ae27286.js" crossorigin="anonymous"></script>
+    <title>Signup </title>
+</head>
+
+<body onload="rotate_cube()">
+    <div class="wrapper">
+        <div class="gossip-img"></div>
+        <div class="wrapper-box-far-out">
+            <div class="wrapper-box-outer">
+                <div class="wrapper-box-out">
+                    <div class="wrapper-box">
+                        <div class="nav-bar">
+                            <div class="nav-element-one"> <i class="fas fa-mobile-alt"></i> </div>
+                            <div class="nav-line-one-right"></div>
+                            <div class="nav-element-two"><i class="fas fa-camera"></i></div>
+                            <div class="nav-element-three"><i class="far fa-check-circle"></i></div>
+                        </div>
+                        <div class="banner-label">Signup in less than a minute and start gossiping!</div>
+                        <div class="three-d-box">
+                            <div id="cube" class="cube">
+                                <div id="front-face" class="face front-face" onclick="rotate_cube()"><img src="../client/public/images/images.png" alt="share-images"></div>
+                                <div id="back-face" class="face back-face"><img src="../client/public/images/fake-news.png" alt="fake-news"></div>
+                                <div id="left-face" class="face left-face"><img src="../client/public/images/conversation.png" alt="chat with freinds"></div>
+                                <div id="right-face" class="face right-face"><img src="../client/public/images/emotions.png" alt="typing mood"></div>
+                                <div id="top-face" class="face top-face">Five</div>
+                                <div id="bottom-face" class="face bottom-face">Six</div>
+                            </div>
+                        </div>
+                        <div class="mobile-number">
+                            <input id="mobile-inbox" class="input-box mobile-inbox" type="number" placeholder="Enter your mobile number here ">
+                            <button id="go-btn" class="go-button"><span><i class="fas fa-arrow-right"></i></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./signup.js"></script>
+</body>
+
+</html>

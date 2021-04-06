@@ -1,0 +1,319 @@
+.gossip-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 80px;
+    margin: auto;
+    background-image: url('public/images/gossip.PNG');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    }
+/* wrapper classes */
+.wrapper{
+    position: relative;
+    height: 650px;
+    overflow-y: scroll;
+    /* hide scrollbar in IE and firefox  */
+    -ms-overflow-style: none;   /* for IE and edge  */
+    scrollbar-width: none;  /* for firefox  */
+}
+.wrapper::-webkit-scrollbar{
+    display: none;   /* to hide scrollbar in chrome */
+}
+.wrapper-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width:378.4px;
+    height: 462.72px;
+    border: 1px solid #081C15;
+    border-radius: 100px;
+    border-collapse: collapse;
+}
+.wrapper-box-out{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 395.68px;
+    height: 462.72px;
+    border: 1px solid #1B4332;
+    border-radius: 100px;
+    border-collapse: collapse;
+}   
+.wrapper-box-outer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 414.88px;
+    height: 462.72px;
+    border: 1px solid green;
+    border-radius: 100px;
+    border-collapse: collapse;
+}
+.wrapper-box-far-out{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 433.12px;
+    height: 462.72px;
+    border: 1px solid green;
+    border-radius: 100px;
+    border-collapse: collapse;
+}
+@media screen and (max-width: 480px){
+    .wrapper{
+        height: 550px;
+    }
+    .wrapper-box-far-out{
+        width: 300px;
+        height: 380px;
+        border-radius: 70px;
+    }
+    .wrapper-box-outer{
+        width: 290px;
+        height: 380px;
+        border-radius: 70px;
+    }
+    .wrapper-box-out{
+        width: 280px;
+        height: 380px;
+        border-radius: 70px;
+    }
+    .wrapper-box{
+        width: 270px;
+        height: 380px; 
+        border-radius: 70px;
+    }
+}
+/*Navigation bar css */
+.nav-bar{
+    position: relative;
+    top: 60px;
+    margin: auto;
+    width: 330px;
+    height: 60px;
+}
+.nav-element-one{
+    display: inline-block;
+    height: 50px;
+    width: 40px;
+    margin-left: 20px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-size: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(4, 233, 4);
+    background-color: #058c42;
+    color: white;
+    border-radius: 5px;
+}
+.nav-element-one i{
+    box-sizing: border-box;
+}
+.nav-element-two{
+    display: inline-block;
+    height: 50px;
+    width: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-size: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    /* border: 1px solid rgb(4, 233, 4);
+    background-color: #058c42;
+    color: white; */
+    border-radius: 5px;
+}
+.nav-element-three{
+    display: inline-block;
+    height: 50px;
+    width: 40px;
+    margin-left: 40px;
+    margin-right: auto;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-size: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    /* border: 1px solid rgb(4, 233, 4);
+    background-color: #058c42;
+    color: white; */
+    border-radius: 5px;
+}
+.nav-line-one-right{
+    display: inline-block;
+    height: 1px;
+    width: 40px;
+    transform: translate(-4px,-10px);
+    border-top: 1.3px solid #058c42;
+}
+@media screen and (max-width: 480px){
+    .nav-bar{
+        width: 240px;
+        margin: 0px;
+    }
+    .nav-element-one{
+        margin-left: 25px;
+    }
+    .nav-line-one-right{
+        width: 20px;
+    }
+    .nav-element-two{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .nav-element-three{
+        margin-left: 20px;
+        margin-right: auto;
+    }
+}
+.banner-label{
+    position: relative;
+    top: 80px;
+    margin-top: 5px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+}
+/* 3d box */
+.three-d-box{
+    position: relative;
+    top: 120px;
+    perspective: 400px;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+}
+.cube{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(-30px);
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+.face{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+}
+.face img{
+    width: 100%;
+    height: 100%;
+}
+.front-face{
+    transform:rotateY(0deg) translateZ(30px);
+    background-color: white;
+    color: white;
+}
+.back-face{
+    transform: rotateY(180deg) translateZ(30px);
+    background-color: white;
+    color: white;
+}
+.left-face{
+    transform: rotateY(-90deg) translateZ(30px);
+    background-color: white;
+    color: white;
+}
+.right-face{
+    transform: rotateY(90deg) translateZ(30px);
+    background-color: white;
+    color: white;
+}
+.top-face{
+    transform: rotateX(90deg) translateZ(30px);
+    background-color: white;
+    color: white;
+}
+.bottom-face{
+    transform: rotateX(-90deg) translateZ(30px);
+    background-color: white;
+    color: white;
+}
+/* Input mobile number div */
+.mobile-number{
+    position: relative;
+    top: 125px;
+    width: auto;
+}
+/* Button in mobile number div */
+.mobile-number button{
+    display: table; 
+    font-family: 'InriaRegular';
+    font-size: 24px;
+    text-align: center;
+    color: green;
+    background-color: white;
+    border: 1px solid rgb(255, 253, 253);
+    border-radius: 25px;
+}
+.mobile-number button:focus{
+    outline: none;
+    border: 1px solid rgb(255, 253, 253);
+    color:white;
+    background-color: green;
+}
+.mobile-number button span{
+    display: table-cell;
+    width: fit-content;
+    vertical-align: middle;
+}
+/* Input box */
+.input-box{
+    display: inline-block;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    border: 1px solid green;
+}
+.input-box:focus{
+    outline-width: 0px;
+    border: 1px solid rgba(124, 126, 129, 0.589);
+}
+.mobile-inbox{
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 85%;
+    height: 40px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+/* To remove number scroll from input box  Chrome, Safari, edge*/
+.mobile-inbox::-webkit-inner-spin-button,
+.mobile-inbox::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+/*  To remove number scroll from input box  */
+input[type = number]{
+    -moz-appearance: textfield;
+}
+/*Arrow button */
+.go-button{
+    position: absolute;
+    top: 5%;
+    right: 8%;
+    width: 36px;
+    height: 35px;
+}
